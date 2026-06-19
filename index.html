@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Weather App"/>
+    <title>Weather App using API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Weather Dashboard</h1>
+<div class="search-box">
+    <div class="date-section"><p id="currentDate"></p></div>
+    
+<div class="search-tab"><input type="text" placeholder="🔎︎ Search City" id="cityInput">
+<button id="searchBtn">Search</button>
+</div></div>
+
+<div class="dashboard">
+<div class="weather-card">
+    <div class="card-top">
+
+   <div class="location"> <h2 id="cityName"></h2>
+    <div class="unitToggle"><button id="celsiusBtn">°C</button>
+     <button id="fahrenheitBtn" >°F</button></div>
+    <p id="currentTime"></p>
+</div><br>
+
+   
+  <div class="weather-main">
+        <div class="background-img" style="background-image: url('https://i.pinimg.com/736x/32/ac/50/32ac502292e840b864ec81f00d7c0f18.jpg');width: 350px; border-radius: 10px;height: 170px;padding:9px;">
+         <p id="description"></p><br>
+         <p id="temperature" style="font-size: 60px; font-weight: 600;"></p></div>
+        <img id="weatherIcon" src="" alt="weather icon" style="width: 130px; height: 150px;" >
+    </div>
+   
+    </div>
+
+    <div class="card-grid">
+    <div class="card1"><span style="font-weight: bold;">Humidity</span><p id="humidity"></p></div>
+    <div class="card1"><span style="font-weight: bold;">Wind</span><p id="windSpeed"></p> </div>
+    <div class="card1"><span style="font-weight: bold;">Pressure</span><p id="pressure"></p> </div>
+    <div class="card1"><span style="font-weight: bold;">Visibility</span><p id="visibility"></p> </div>
+</div> 
+</div>
+
+<div class="Forecast">
+   <div class="sunTimes">
+    <div class="sunrise">
+    <span style="text-align: left; font-size: 25px;font-weight: bold;">Sunrise</span><p id="sunrise">Sunrise</p></div><br>
+    <div class="sunset">
+    <span style="text-align: left; font-size: 25px; font-weight: bold;">Sunset</span><p id="sunset">Sunset</p></div>
+<div class="Min-Temp">
+    <span style="text-align: left; font-size: 25px; font-weight: bold;">Min Temp</span><p id="min-temp">Min Temp</p></div>
+<div class="Max-Temp">
+    <span style="text-align: left; font-size: 25px; font-weight: bold;">Max Temp</span><p id="max-temp">Max Temp</p></div></div> 
+  <div class="forecast-container" id="forecastContainer"></div>
+</div> 
+ 
+</div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    margin: 10px;
+    padding: 10px;
+    background-color:rgb(54, 54, 54);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     transition: background 0.5s ease;
+    min-height: 100vh;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 12px;
+    color: white;
+}
+.search-box {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    display: flex;
+    gap:4px
+   }
+
+.date-section{
+    font-size:20px;
+    font-family:'Google Sans',serif;
+    font-weight: 300;
+    margin-top: 14px;
+    background-color:rgb(126, 206, 233);
+    border-radius: 4px;
+    margin-right: 4px;
+    padding: 2px;
+}
+
+.search-tab{
+    width:90%;   
+}
+#cityInput{
+    font-size: 18px;
+    color: black;
+    padding-left: 5px;
+    padding:5px;
+    margin-top: 15px;
+    width: 91%;
+    
+}
+#searchBtn{
+    font-size: 18px;
+    margin: 5px;
+    padding:5px;
+    background-color: aliceblue;
+}
+
+#searchBtn:hover{
+    background-color:rgb(152, 149, 149);
+}
+
+.container {
+    width: 100%;
+    max-width: 2000px;
+    height: fit-content;
+    padding: 20px;
+    background-color:rgb(0, 0, 0);
+     border-radius: 15px;
+}
+
+.weather-card {
+    background-color:rgb(126, 206, 233);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+    width: 700px;
+    display: grid;  
+}
+
+
+#cityName{
+    font-size: 18px; 
+    background-color: white;
+    border-radius: 20px;
+   padding: 10px;
+   width: fit-content;
+   
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 18px; 
+    
+}
+
+.card-top{
+    text-align: left;
+}
+
+.card1 {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+#description {
+    text-transform: capitalize;
+}
+
+.location {
+    display: flex;
+   justify-content:space-between;
+    align-items:flex-start;
+    width: 100%;
+    
+}
+#currentTime{
+    font-size:20px;
+}
+.sunset{
+    background-color: rgb(126, 206, 233);
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+    width:200px;
+    height: fit-content;
+    gap:30px;   
+    font-size: 30px;
+    padding:5px;
+    font-family: 'Monospace',serif;
+    line-height: 40px;
+}
+.dashboard{
+    display: flex;
+}
+.sunrise{
+background-color: rgb(126, 206, 233);
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+    width:200px;
+    height: fit-content;
+    gap:30px;
+    font-size: 30px;
+    padding:5px;
+    font-family: 'Monospace',serif;
+    line-height: 40px;
+}
+
+#weatherIcon{
+    width: 150px;
+}
+
+.weather-main{
+    display: flex;
+    gap:150px;
+}
+
+#celsiusBtn.active, #fahrenheitBtn.active{
+    background-color: white;
+    border-radius:15px;
+}
+
+#celsiusBtn, #fahrenheitBtn {
+    background: none;
+    border: none;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: rgb(193, 193, 193);
+}
+
+.unitToggle{
+    gap:15px;
+    display:flex;
+    background-color:rgb(209, 209, 209) ;
+    padding:4px;
+    border-radius:15px;
+
+    
+}
+.forecast-container{
+    color:black;
+  line-height:40px;
+   margin-left: 20px;
+    background-color:rgb(126, 206, 233) ;
+    gap:95px;
+    border-radius: 15px;
+    padding-top: 25px;
+    font-size: 25px; 
+    text-align:left;
+    margin-top:20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    
+   
+    
+}
+.Forecast{
+    display: flex;
+}
+
+.Min-Temp{
+background-color: rgb(126, 206, 233);
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+    width:200px;
+    height: fit-content;
+    gap:30px;
+    font-size: 30px;
+    padding:5px;
+    font-family: 'Monospace',serif;
+line-height: 40px;}
+.Max-Temp{
+  background-color: rgb(126, 206, 233);
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+    width:200px;
+    height: fit-content;
+    gap:30px;
+    font-size: 30px;
+    padding:5px;
+    font-family: 'Monospace',serif;
+    line-height: 40px;
+}
