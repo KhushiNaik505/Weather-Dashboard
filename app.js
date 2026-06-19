@@ -131,7 +131,7 @@ function displayForecast(forecastData){
         const icon=day.weather[0].icon;
 
         const card=`
-        <div class="forecast-card" style="display:flex;width:350px;">
+        <div class="forecast-card" style="display:flex;width:fit-content;">
         <p style="font-weight:bold;">${date}</p>
          
         <p style="line-height:40px;"><br>${temp} °C</p>
