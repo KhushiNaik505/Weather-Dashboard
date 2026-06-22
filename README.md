@@ -20,5 +20,8 @@ A responsive weather dashboard built using HTML, CSS, and JavaScript that provid
 
 ![Weather Dashboard Demo](demo.gif)
 
+## Website Demo
+https://khushinaik505.github.io/Weather-Dashboard/
+
 
 Built as a frontend project to practice API integration, asynchronous JavaScript, and responsive web design.
