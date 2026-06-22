@@ -12,30 +12,13 @@ A responsive weather dashboard built using HTML, CSS, and JavaScript that provid
 * Responsive and user-friendly interface
 * Error handling for invalid city searches
 
-## Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript (ES6)
-* OpenWeather API
 
-## How to Run
-
-1. Clone this repository.
-2. Open `index.html` in your browser.
-3. Search for any city to view its weather details.
-
-## Future Improvements
-
-* Current location weather support
-* Weather icons and animations
-* Search history
 * Dark/Light mode toggle
 
 ## Preview
 
-(Add a screenshot of your project here)
+![Weather Dashboard Demo](demo.gif)
 
----
 
 Built as a frontend project to practice API integration, asynchronous JavaScript, and responsive web design.
